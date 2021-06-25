@@ -242,9 +242,9 @@ body {
   justify-content: center;
   position: absolute;
   font-size: 5rem;
-  width: 27rem;
-  height: 27rem;
-  background-color: rgba(0, 0, 0, 0.267);
+  width: 28rem;
+  height: 5rem;
+  border-radius: 5px 5px 23px 23px;
   z-index: 100;
 }
 
