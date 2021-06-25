@@ -1,0 +1,40 @@
+.container {
+    margin: $container-margin;
+    padding: $container-padding;
+    background-color: $color-primary;
+    border-radius: 25px;
+    &::after {
+        content: "";
+        background-color: rgba(0, 0, 0, 0.034);
+        width: 100%;
+        z-index: 100;
+    }
+}
+
+.game-table {
+    margin-top: 3vh;
+}
+
+.game-grid {
+    display: grid;
+    padding: $grid-padding;
+    // grid-gap: minmax(10px, $grid-gap);
+    font-size: $numFont-Size;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    // margin-top: 50px;
+    background-color: $bgcolor-grid;
+    z-index: 2;
+}
+
+.game-cell {
+    cursor: pointer;
+    width: $game-cell-width;
+    height: $game-cell-height;
+    margin: 1vh; // min(1vh, 5px)
+    background-color: $color-gamecell;
+    border-radius: $game-cell-borderRadius;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

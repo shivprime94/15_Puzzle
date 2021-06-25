@@ -1,0 +1,42 @@
+.pause {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: $pause-font-size;
+  background-color: #85ea6b;
+  color: $color-whitePaint;
+  height: 3.3rem;
+  margin-top: 1.2rem;
+  // border-radius: 5px;
+  border-radius: 5px 5px 23px 23px;
+  cursor: pointer;
+  // padding: auto;
+  &:hover {
+    background-color: #57407b;
+    color: $color-body;
+  }
+}
+
+.pauseBOX {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  font-size: $play-button-size;
+  // border-radius: 5px 5px 23px 23px;
+  // width: calc((94.7%-#{$gutter-horizontal}) / 2);
+  width: ($grid-gap * 5)+ ($game-cell-width * 4);
+  height: ($grid-gap * 5)+ ($game-cell-height * 4);
+  // width: 499px;
+  // height: 487px;
+  // &::after {
+  //     content: " ";
+  //     background-color: rgba(0, 0, 0, 0.349);
+  // }
+  background-color: rgba(0, 0, 0, 0.267);
+  z-index: 100;
+}
+
+.fa-play-circle {
+  cursor: pointer;
+}

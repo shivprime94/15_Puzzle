@@ -1,0 +1,40 @@
+@media only screen and (max-width:1024px) {
+    // .game-grid {
+    //     margin-top: 25px;
+    //     grid-gap: 9px;
+    // }
+    .game-cell {
+        height: 5.5rem;
+        width: 5.5rem;
+    }
+}
+
+@media only screen and (max-width:623px) {
+    // .container {
+    //     margin: 25px;
+    //     padding: 25px;
+    // }
+    /* .game-grid{
+        margin-top: 25px;
+        grid-gap: 25px;
+    } */
+    .game-cell {
+        height: 4.5rem;
+        width: 4.5rem;
+    }
+}
+
+@media only screen and (max-width:330px) {
+    // .container {
+    //     margin: 25px;
+    //     padding: 15px;
+    // }
+    .game-grid {
+        /* margin-top: 25px; */
+        grid-gap: 7px;
+    }
+    .game-cell {
+        height: 4.5rem;
+        width: 4.5rem;
+    }
+}

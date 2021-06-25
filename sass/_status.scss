@@ -1,0 +1,52 @@
+.status-action {
+    display: flex;
+    margin-top: 3.5vh;
+    font-size: $status-fSize;
+    justify-content: space-around;
+    /* height: 32px; */
+    &-new {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        padding: $new-button-padding;
+        background-color: $color-whitePaint;
+        border-radius: $status-action-border-radius;
+        &:hover {
+            color: #f2ebd3;
+            background-color: $win-color;
+        }
+    }
+    &-status {
+        display: flex;
+        border-radius: $status-action-border-radius;
+        background-color: $color-whitePaint;
+        .time,
+        .moves {
+            width: 5rem
+        }
+        .time,
+        .moves {
+            margin: 0 0 0rem 0;
+            padding: 9px 16px 9px 4px;
+        }
+        .time-title,
+        .moves-title {
+            font-size: 15px;
+            text-align: right;
+        }
+        .time-container,
+        .moves-container {
+            text-align: right;
+        }
+    }
+}
+
+.status-action-status span {
+    color: $color-whitePaint;
+}
+
+.won,
+.won::after {
+    background-color: $win-color !important;
+    // color: red;
+}
